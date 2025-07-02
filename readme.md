@@ -5,7 +5,6 @@
 <br />
 <div align="center">
   <a href="https://github.com/zyx-0314/">
-  <!-- TODO: If you want to add logo or banner you can add it here -->
     <img src="./assets/img/my logo.png" alt="Innovation." width="200" height="100">
   </a>
   <h3 align="center">WD-Seatwork-2</h3>
@@ -26,7 +25,6 @@
 <br />
 <br />
 
-<!-- TODO: If you want to add more layers for your readme -->
 <details>
   <summary>Table of Contents</summary>
   <ol>
@@ -54,25 +52,49 @@
 
 ## Overview
 
-<!-- TODO: To be changed -->
-<!-- The following are just sample -->
-WD-Seatwork-2 is a course activity that aims to practice and exercise students' skills and understanding about HTML and CSS by applying it in 5 hero sections under a multi-page website.
+### What is the project?
+WD-Seatwork-2 is a web development project that involves designing five distinct hero sections within a multi-page website. It serves as a course activity to help students apply and demonstrate their knowledge of HTML and CSS in practical, creative layouts. Each hero section showcases a different design approach, reinforcing students' understanding of webpage structure and styling.
 
-Guiding Question:
-- What is the project
-- Whats the purpose
-- What are key components
-- What technology used and how it is used
+### What is the purpose?
+The purpose of this project is to practice and strengthen students' skills in using HTML and CSS to create visually engaging and user-friendly website sections. It allows students to explore the principles of layout, styling, and web design, while also encouraging creativity in presenting introductory content through hero sections.
+
+### What are the key components?
+
+- A fully structured multi-page website
+
+- 5 uniquely designed hero sections, each on separate pages
+
+- A consistent and well-designed title page
+
+- Thoughtful use of typography to enhance readability and visual hierarchy
+
+- Integration of icons to support visual messaging
+
+- Application of transitions and effects to improve interactivity
+
+- Use of images and media to enhance visual impact
+
+- Interactive buttons and links for navigation and user engagement
+
+### What technologies are used and how are they used?
+This project uses:
+
+- HTML for structuring the content of each web page, including headings, images, text blocks, and navigation.
+
+- CSS for styling the visual appearance of the site — including layout design, colors, fonts, transitions, responsiveness, and media presentation.
+
 
 ### Key Components
-<!-- TODO: List of Key Components -->
-<!-- The following are just sample -->
 - MultiPage Website
-- Parallax transition
-- Transactional
+- 5 Hero Sections
+- Title Page
+- Typography
+- Icons
+- Transitions
+- Images and Media
+- Buttons and Links
 
 ### Technology
-<!-- TODO: List of Technology Used -->
 ![HTML](https://img.shields.io/badge/HTML-E34F26?style=for-the-badge&logo=html5&logoColor=white)
 ![CSS](https://img.shields.io/badge/CSS-1572B6?style=for-the-badge&logo=css3&logoColor=white)
 
@@ -112,8 +134,6 @@ WD-ProjectName
 ```
 
 ## Resources
-
-<!-- TODO: Add References -->
 | Title | Purpose | Link |
 |-|-|-|
 | ChatGPT| Generative AI model tool for assisting in docs update and overall planning of web design scheme. | https://chatgpt.com/ |
