@@ -111,10 +111,11 @@ body
         {
             height: 5rem;
             width: 8rem;
+            transition: transform 0.2s ease;
 
             &:hover
             {
-                text-shadow: 1px 1px 2rem white;
+                transform: scale(1.11);
             }
 
             &:active
@@ -123,6 +124,103 @@ body
             }
         }
     }
+}
+
+/* .hero-sec *,
+.hero-sec
+{
+    border: .2rem dashed blue;
+} */
+
+
+.hero-sec
+{
+    width: 100dvw;
+    height: 100dvh;
+    background: linear-gradient(to bottom, #0a0a0a 30%, #1a0033 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.silhouette
+{
+    position: absolute;
+    bottom: 15%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    max-width: 1000px;
+    opacity: 0.35;
+    z-index: 1;
+    pointer-events: none;
+}
+
+.hero-sec::before
+{
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: url("/assets/img/TT-bg.jpg") center/cover no-repeat;
+    opacity: 0.35; /* darken image for readability */
+    z-index: 0;
+}
+
+.texts
+{
+    position: relative;
+    z-index: 2;
+    color: white;
+    max-width: 850px;
+    animation: fadein 1.5s ease-out forwards;
+    backdrop-filter: blur(2px);
+    padding: 2rem;
+    animation: slide-up 1.2s ease-out forwards;
+    opacity: 0;
+    transform: translateY(30px);
+    margin-bottom: 24px;
+}
+
+.headline h1
+{
+    font-size: 4.5rem;
+    margin-bottom: 1rem;
+    color: #ff00cc;
+    text-shadow: 2px 2px 5px rgba(0,0,0,0.5);
+    letter-spacing: 0.08em;
+}
+
+.desc p {
+    font-size: 1.25rem;
+    line-height: 1.6;
+    color: #eee;
+    margin-bottom: 2.5rem;
+    padding: 0 1rem;
+}
+
+.cta-btn
+{
+    display: inline-block;
+    padding: 1rem 2.2rem;
+    font-size: 1.1rem;
+    background: linear-gradient(to right, #ff00cc, #3333ff);
+    color: white;
+    text-decoration: none;
+    border-radius: 50px;
+    font-weight: bold;
+    letter-spacing: 0.05rem;
+    box-shadow: 0 0 20px #ff00cc55;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.cta-btn:hover
+{
+    transform: scale(1.08);
+    box-shadow: 0 0 30px #ff00ccaa;
 }
 
 @keyframes fadein
@@ -139,5 +237,33 @@ body
     to
     {
         opacity: 1;
+    }
+}
+
+@keyframes slide-up
+{
+    to
+    {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media (max-width: 768px)
+{
+    .headline h1
+    {
+        font-size: 2.5rem;
+    }
+
+    .desc p
+    {
+        font-size: 1rem;
+    }
+
+    .cta-btn
+    {
+        padding: 0.75rem 1.5rem;
+        font-size: 0.95rem;
     }
 }

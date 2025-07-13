@@ -113,10 +113,11 @@ body
         {
             height: 5rem;
             width: 8rem;
+            transition: transform 0.2s ease;
 
             &:hover
             {
-                text-shadow: 1px 1px 2rem white;
+                transform: scale(1.11);
             }
 
             &:active
@@ -188,6 +189,7 @@ body
             height: 100%;
             background: rgba(0, 0, 0, 0.5); /* Darkens video for contrast */
             z-index: 1;
+            pointer-events: none;
         }
 }
 
@@ -234,6 +236,19 @@ body
         flex-direction: row;
         gap: 10rem;
 
+        .card-link
+        {
+        text-decoration: none;
+        color: inherit;
+        display: block;
+        z-index: 2;
+        }
+
+        .card:hover
+        {
+            transform: scale(1.05);
+        }
+
         .card
         {
         box-shadow: 9px 7px 10px 7px rgba(0,0,0,.2);
@@ -242,11 +257,6 @@ body
         z-index: 2;
         border-radius: 10px;
         padding: 2rem;
-
-            .card:hover
-            {
-                box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-            }
 
             .container
             {
@@ -282,6 +292,20 @@ body
         flex-direction: row;
         gap: 10rem;
 
+        .card-link
+        {
+        text-decoration: none;
+        color: inherit;
+        display: block;
+        z-index: 2;
+        }
+
+        .card:hover
+        {
+            transform: scale(1.05);
+            cursor: pointer;
+        }
+
         .card
         {
         box-shadow: 9px 7px 10px 7px rgba(0,0,0,.2);
@@ -290,11 +314,6 @@ body
         z-index: 2;
         border-radius: 10px;
         padding: 2rem;
-
-            .card:hover
-            {
-                box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-            }
 
             .container
             {
