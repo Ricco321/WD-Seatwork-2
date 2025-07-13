@@ -126,11 +126,11 @@ body
     }
 }
 
-/* .hero-sec *,
+.hero-sec *,
 .hero-sec
 {
-    border: .2rem dashed blue;
-} */
+    /* border: .2rem dashed blue; */
+}
 
 
 .hero-sec
