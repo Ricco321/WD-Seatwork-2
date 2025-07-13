@@ -20,7 +20,7 @@ body
 .hero
 {
     z-index: 1;
-    background: url(/assets/img/aesthetic.gif);
+    background: url(../img/aesthetic.gif);
     background-size: cover;
     width: 100dvw;
     height: 100dvh;
