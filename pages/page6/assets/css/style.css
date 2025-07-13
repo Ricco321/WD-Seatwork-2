@@ -7,9 +7,14 @@
 
 body
 {
-    font-family: "Poppins", sans-serif;
+    height: auto;
+    min-height: 100%;
+    overflow-x: hidden;
     opacity: 0;
     animation: fade 1.5s ease-out forwards;
+    font-family: 'Courier New', monospace;
+    background-color: #000;
+    overflow: hidden;
 }
 
 .header *,
@@ -125,13 +130,133 @@ body
     }
 }
 
-@keyframes fadein
-{
-    to
-    {
-        opacity: 1;
-        transform: translateX(0);
-    }
+.courage-nowhere {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  position: relative;
+  background: url("../../../../assets/img/nowhere.jpg") no-repeat center center/cover;
+  overflow: hidden;
+  padding: 3rem;
+  gap: 2rem;
+}
+
+/* Overlay */
+.dark-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.85);
+  backdrop-filter: blur(1px);
+  z-index: 0;
+}
+
+/* LEFT SIDE — TEXT */
+.courage-left {
+  flex: 1;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2rem;
+  padding: 2rem;
+  max-width: 600px;
+}
+
+.distorted-title {
+  font-size: 2.8rem;
+  color: #ff00ff;
+  text-shadow: 2px 2px #550055;
+  animation: glitchText 1.5s infinite;
+}
+
+.subtext {
+  font-style: italic;
+  color: #ccc;
+}
+
+.vhs-button {
+  display: inline-block;
+  padding: 1rem 2rem;
+  background: #ff00ff;
+  color: black;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 8px;
+  box-shadow: 0 0 20px #ff00ff88;
+  transition: all 0.3s ease;
+}
+
+.vhs-button:hover {
+  background: white;
+  color: #ff00cc;
+}
+
+/* RIGHT SIDE — COURAGE & EYE */
+.courage-right {
+  flex: 1;
+  z-index: 2;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.courage-shadow {
+  height: 60vh;
+  opacity: 0.8;
+  filter: drop-shadow(0 0 8px #ff66ff);
+  animation: floaty 6s ease-in-out infinite;
+}
+
+.watcher-eye {
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+  width: 120px;
+  animation: blink 6s infinite ease-in-out;
+  filter: drop-shadow(0 0 10px #ff00ff88);
+}
+
+/* Animations */
+@keyframes glitchText {
+  0% { text-shadow: 2px 2px #ff00ff, -2px -2px #000; }
+  50% { text-shadow: -2px 2px #ff00ff, 2px -2px #000; }
+  100% { text-shadow: 0 0 10px #ff00ff; }
+}
+
+@keyframes floaty {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.3; }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .courage-nowhere {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .courage-left,
+  .courage-right {
+    width: 100%;
+    padding: 1.5rem;
+  }
+
+  .courage-shadow {
+    height: 40vh;
+  }
+
+  .watcher-eye {
+    width: 80px;
+    right: 1rem;
+    top: 1rem;
+  }
 }
 
 @keyframes fade
@@ -139,5 +264,14 @@ body
     to
     {
         opacity: 1;
+    }
+}
+
+@keyframes fadein
+{
+    to
+    {
+        opacity: 1;
+        transform: translateX(0);
     }
 }
