@@ -125,6 +125,208 @@ body
     }
 }
 
+.knd-hero 
+{
+  background: radial-gradient(circle, #001100 0%, #000000 100%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 3rem 2rem;
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+  min-height: 100vh;
+  height: auto;
+  overflow: visible;
+  padding-bottom: 5rem;
+}
+
+
+.knd-logo {
+  max-width: 280px;
+  margin-bottom: 1rem;
+  filter: drop-shadow(0 0 10px #0f0);
+}
+
+.mission-title {
+  font-size: 2rem;
+  letter-spacing: 0.2rem;
+  margin-bottom: 2rem;
+  text-shadow: 0 0 8px #0f0;
+  border-bottom: 2px dashed #0f0;
+  padding-bottom: 0.5rem;
+}
+
+.mission-card {
+  background-color: rgba(0, 255, 0, 0.08);
+  border: 1px dashed #0f0;
+  padding: 1.5rem;
+  max-width: 600px;
+  margin: 1rem auto 2rem;
+  border-radius: 10px;
+  text-shadow: 0 0 5px #0f0;
+}
+
+.mission-btn {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.8rem 1.6rem;
+  background-color: transparent;
+  color: #0f0;
+  border: 2px solid #0f0;
+  border-radius: 50px;
+  font-weight: bold;
+  text-decoration: none;
+  letter-spacing: 0.1rem;
+  transition: all 0.3s ease;
+  box-shadow: 0 0 15px #0f05;
+}
+
+.mission-btn:hover {
+  background-color: #0f0;
+  color: #000;
+  box-shadow: 0 0 25px #0f0;
+}
+
+.console-box {
+  background-color: #050;
+  padding: 1rem;
+  margin-top: 1rem;
+  font-size: 0.9rem;
+  border-radius: 5px;
+  width: 90%;
+  max-width: 500px;
+  box-shadow: 0 0 10px #0f03;
+  text-align: left;
+}
+
+.knd-agents {
+  position: absolute;
+  bottom: 0;
+  right: 2rem;
+  max-height: 40vh;
+  opacity: 0.9;
+  filter: drop-shadow(0 0 5px #0f0);
+}
+
+@media (max-width: 768px) {
+  .knd-agents {
+    position: static;
+    margin-top: 2rem;
+    width: 80%;
+  }
+
+  .mission-title {
+    font-size: 1.5rem;
+  }
+
+  .console-box {
+    text-align: center;
+  }
+}
+
+.mission-links {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.mission-links a {
+  text-decoration: none;
+  color: #0f0;
+  border: 1px solid #0f0;
+  padding: 0.5rem 1.2rem;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  transition: all 0.3s ease;
+  background-color: transparent;
+}
+
+.mission-links a:hover {
+  background-color: #0f0;
+  color: #000;
+}
+
+.mission-file {
+  margin-top: 3rem;
+  background: rgba(0, 255, 0, 0.07);
+  padding: 2rem;
+  border: 1px dashed #0f0;
+  border-radius: 10px;
+  text-align: center;
+  max-width: 700px;
+  margin-inline: auto;
+  color: #0f0;
+  font-family: 'Courier New', monospace;
+}
+
+.blink {
+  font-weight: bold;
+  margin-top: 1rem;
+  letter-spacing: 0.1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.3rem;
+}
+
+.cursor {
+  animation: blink 1s infinite;
+  color: #0f0;
+}
+
+@keyframes blink {
+  0%, 50% {
+    opacity: 1;
+  }
+  51%, 100% {
+    opacity: 0;
+  }
+}
+
+.gadget-briefcase {
+  text-align: center;
+  margin-top: 3rem;
+  color: #0f0;
+}
+
+.gadget-briefcase h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  text-shadow: 0 0 10px #0f0;
+}
+
+.gadget-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 1rem;
+  padding: 0 2rem;
+}
+
+.gadget {
+  border: 1px solid #0f0;
+  padding: 1rem;
+  border-radius: 10px;
+  background-color: rgba(0, 255, 0, 0.05);
+  box-shadow: 0 0 10px #0f03;
+  font-size: 0.9rem;
+  transition: transform 0.3s ease;
+}
+
+.gadget:hover {
+  transform: scale(1.05);
+}
+
+.multi-cta {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-top: 2.5rem;
+  flex-wrap: wrap;
+}
+
 @keyframes fadein
 {
     to

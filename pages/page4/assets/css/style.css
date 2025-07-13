@@ -85,14 +85,8 @@ body
             align-items: center;
             justify-content: center;
             position: relative;
-            text-decoration: none;
-            color: white;
-            height: 2.5rem;
-            width: 5rem;
-            top: 1.5rem;
-            letter-spacing: .1rem;
-            font-weight: bolder;
-            font-size: large;
+            height: 5rem;
+            width: 7rem;
             cursor: default;
 
             &::after
@@ -102,8 +96,6 @@ body
                 left: 0;
                 bottom: 0;
                 height: 2px;
-                width: 100%;
-                background-color: aqua;
             }
         }
 
