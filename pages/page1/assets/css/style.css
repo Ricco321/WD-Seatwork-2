@@ -196,7 +196,7 @@ body
 .shows
 {
     position: relative;
-    background: url(/assets/img/CartoonNetwork-cover.jpg);
+    background: url(../../../../assets/img/CartoonNetwork-cover.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;

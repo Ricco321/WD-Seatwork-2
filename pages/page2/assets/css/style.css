@@ -179,7 +179,7 @@ body
     content: "";
     position: absolute;
     inset: 0;
-    background: url("/assets/img/TT-bg.jpg") center/cover no-repeat;
+    background: url("../../../../assets/img/TT-bg.jpg") center/cover no-repeat;
     opacity: 0.35; /* darken image for readability */
     z-index: 0;
 }
