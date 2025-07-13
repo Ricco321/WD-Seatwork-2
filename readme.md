@@ -85,14 +85,21 @@ This project uses:
 
 
 ### Key Components
-- MultiPage Website
-- 5 Hero Sections
-- Title Page
-- Typography
-- Icons
-- Transitions
-- Images and Media
-- Buttons and Links
+1. MultiPage Website - A website structured across multiple HTML pages (e.g., index.html, about.html, contact.html, etc.) instead of a single-page layout. Each page can have its own content, layout, and styling, providing a more organized experience and improving navigation.
+
+2. 5 Hero Sections - Each page includes a hero section — the large, visually striking area at the top, often containing a background image, heading, and call-to-action. These serve as the attention-grabbers and set the tone for the content below. Having five ensures visual variety across your site.
+
+3. Title Page - A dedicated landing or welcome page that introduces the website or project. It typically contains the main site title, a tagline or slogan, and links to other sections. This is the user's first impression and helps establish branding or context.
+
+4. Typography - Refers to the selection and styling of fonts throughout the website. This includes headings, body text, and any readable content. Consistent typography improves readability, hierarchy, and visual aesthetics.
+
+5. Icons - Scalable vector graphics (SVGs) or font icons (e.g., Font Awesome) are used for UI elements such as buttons, navigation, contact info, and feature highlights. They enhance user interaction and communicate meaning visually.
+
+6. Transitions - Smooth animated effects triggered by user actions or page loads — like hovering over buttons, scrolling, or switching pages. These add a layer of interactivity and make the site feel more responsive and modern.
+
+7. Images and Media - Includes static images, video backgrounds, embedded media (like YouTube or audio), and graphics. These visually support the content, create emotional impact, and help users better understand the message or brand.
+
+8. Buttons and Links -Interactive elements allowing users to navigate between pages, submit forms, or trigger actions. Properly styled buttons and hyperlinks improve usability, encourage engagement, and guide user flow through the site.
 
 ### Technology
 ![HTML](https://img.shields.io/badge/HTML-E34F26?style=for-the-badge&logo=html5&logoColor=white)
